@@ -1,9 +1,10 @@
-import { Home } from './pages/Home'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './routes'
 
 export function App() {
   return (
-    <div className="flex h-screen items-center">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
