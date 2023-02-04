@@ -12,7 +12,7 @@ export function NavLink({ children, href }: NavLinkProps) {
   return (
     <Nav
       to={href}
-      className={`text-2xl text-teal-50 ${isCurrentPath && 'text-teal-500'}`}
+      className={`text-xl text-teal-50 ${isCurrentPath && 'text-teal-500'}`}
     >
       {children}
     </Nav>
