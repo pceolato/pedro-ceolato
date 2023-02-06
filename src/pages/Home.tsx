@@ -26,7 +26,7 @@ export function Home() {
             </h1>
           </div>
           <p className="text-teal-50 py-3 md:py-7 text-sm md:text-base lg:text-xl">
-            —I am a software developer, this is my portfolio and here you will
+            I'm a software developer, this is my portfolio and here you will
             follow my projects and collaborations. I am passionate about
             technology and the power of it.
           </p>
@@ -47,7 +47,7 @@ export function Home() {
             rel="noreferrer"
           >
             <button className="p-4 font-semibold text-sm bg-gray-900 text-teal-500 rounded-md md:hover:scale-110 ease-in-out duration-500">
-              <GitHub size={28} />
+              <GitHub size={24} />
             </button>
           </a>
           <a
@@ -56,7 +56,7 @@ export function Home() {
             rel="noreferrer"
           >
             <button className="p-4 font-semibold text-sm bg-gray-900 text-teal-500 rounded-md md:hover:scale-110 ease-in-out duration-500">
-              <Linkedin size={28} />
+              <Linkedin size={24} />
             </button>
           </a>
         </div>

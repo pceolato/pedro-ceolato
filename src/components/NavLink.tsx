@@ -4,6 +4,7 @@ import { NavLink as Nav, useLocation } from 'react-router-dom'
 interface NavLinkProps {
   children: ReactNode
   href: string
+  onClick?: () => void
 }
 export function NavLink({ children, href }: NavLinkProps) {
   const { pathname } = useLocation()
