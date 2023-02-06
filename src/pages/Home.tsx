@@ -5,7 +5,7 @@ import * as Avatar from '@radix-ui/react-avatar'
 export function Home() {
   return (
     <>
-      <div className="px-8 flex flex-col gap-6 items-start justify-between w-full md:w-[1072px] m-auto md:flex-row">
+      <div className="px-8 flex flex-col gap-6 items-start justify-between w-full max-w-[1072px] m-auto md:flex-row">
         <div className="max-w-screen-sm">
           <div className="flex flex-col md:flex-row items-start md:items-end gap-4 md:gap-8">
             <Avatar.Root className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full">
