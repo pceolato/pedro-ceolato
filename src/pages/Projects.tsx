@@ -4,7 +4,7 @@ import nbaImage from '../assets/nba-players.svg'
 
 export function Projects() {
   return (
-    <div className="w-full max-w-[990px] mx-auto px-8 flex flex-col item-center">
+    <div className="w-full max-w-[950px] mx-auto px-8 flex flex-col items-center">
       <Project
         title="Pedro Ceolato"
         description="—I'm a software engineer passionate about transforming people`s lives through technology."
