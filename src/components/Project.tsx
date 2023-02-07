@@ -10,7 +10,7 @@ interface ProjectProps {
 
 export function Project({ title, description, image, href }: ProjectProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-6 mb-24">
+    <div className="flex flex-col md:flex-row gap-6 mb-24 w-full">
       <div className="flex flex-col gap-3 max-w-[433px]">
         <h1 className="text-teal-50 text-xl md:text-2xl lg:text-3xl font-bold">
           {title}

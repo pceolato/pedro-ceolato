@@ -19,7 +19,7 @@ export function Projects() {
       />
       <Project
         title="NBA Players"
-        description="—I'm a software engineer passionate about transforming people`s lives through technology."
+        description="Web application to fetch information about all NBA players in this project."
         href="/"
         image={
           <img
