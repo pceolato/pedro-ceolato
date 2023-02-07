@@ -1,9 +1,9 @@
 import { Outlet } from 'react-router-dom'
-import { NavDesktop } from '../components/NavDesktop'
+import { NavDesktop } from '../components/navbar/NavDesktop'
 import { useMediaQuery } from 'react-responsive'
 import { saveAs } from 'file-saver'
 import CV from '../../PedroCeolato.pdf'
-import { NavMobile } from '../components/NavMobile'
+import { NavMobile } from '../components/navbar/NavMobile'
 
 export function MainLayout() {
   const isDesktop = useMediaQuery({ query: `(min-width: 768px)` })
