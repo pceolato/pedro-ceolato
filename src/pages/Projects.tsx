@@ -14,7 +14,7 @@ export function Projects() {
         image={
           <img
             src={nbaImage}
-            alt=""
+            alt="Imagem do projeto nba players"
             className="w-full h-full object-cover rounded"
           />
         }
@@ -28,7 +28,7 @@ export function Projects() {
         image={
           <img
             src={portfolioImage}
-            alt=""
+            alt="Imagem do projeto pedro ceolato"
             className="w-full h-full object-cover rounded"
           />
         }
