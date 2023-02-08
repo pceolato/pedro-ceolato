@@ -1,4 +1,4 @@
-import { Project } from '../components/Project'
+import { Project } from '../components/project/Project'
 import portfolioImage from '../assets/portfolio.svg'
 import nbaImage from '../assets/nba-players.svg'
 

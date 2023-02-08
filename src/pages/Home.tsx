@@ -8,7 +8,7 @@ export function Home() {
       <div className="px-8 flex flex-col gap-6 items-start justify-between w-full max-w-[1072px] m-auto md:flex-row">
         <div className="max-w-screen-sm">
           <div className="flex flex-col md:flex-row items-start md:items-end gap-4 md:gap-8">
-            <Avatar.Root className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full">
+            <Avatar.Root className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full transition-all duration-300">
               <Avatar.Image
                 className="w-full h-full object-cover rounded-full"
                 src="https://github.com/pceolato.png"
@@ -21,11 +21,11 @@ export function Home() {
                 PC
               </Avatar.Fallback>
             </Avatar.Root>
-            <h1 className="text-teal-500 font-bold text-3xl md:text-4xl lg:text-5xl">
+            <h1 className="text-teal-500 font-bold text-3xl md:text-4xl lg:text-5xl transition-all duration-300">
               Hi, I'm Pedro Ceolato
             </h1>
           </div>
-          <p className="text-teal-50 py-3 md:py-7 text-sm md:text-base lg:text-xl">
+          <p className="text-teal-50 py-3 md:py-7 text-sm md:text-base lg:text-xl transition-all duration-300">
             I'm a software developer, this is my portfolio and here you will
             follow my projects and collaborations. I am passionate about
             technology and the power of it.
@@ -35,7 +35,7 @@ export function Home() {
           </span>
           <a
             href="mailto:pedroceolato2002@gmail.com?"
-            className="text-teal-300 hover:text-teal-700 transition-all delay-100 text-sm md:text-base lg:text-xl"
+            className="text-teal-300 hover:text-teal-700 transition-all duration-300 text-sm md:text-base lg:text-xl"
           >
             pedroceolato2002@gmail.com
           </a>

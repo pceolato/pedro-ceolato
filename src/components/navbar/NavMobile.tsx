@@ -2,6 +2,7 @@ import * as Dialog from '@radix-ui/react-dialog'
 import { useState } from 'react'
 import { Menu, X } from 'react-feather'
 import { teal } from 'tailwindcss/colors'
+import { ButtonImportCV } from '../ButtonImportCV'
 
 import { Logo } from './Logo'
 import { NavLink } from './NavLink'
@@ -35,6 +36,7 @@ export function NavMobile() {
               <NavLink href="/projects">
                 <div onClick={() => setOpen(false)}>Projects</div>
               </NavLink>
+              <ButtonImportCV />
             </nav>
           </Dialog.Content>
         </Dialog.Portal>
