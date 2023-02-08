@@ -14,12 +14,14 @@ export function MainLayout() {
     <div>
       {isDesktop ? <NavDesktop /> : <NavMobile />}
       <Outlet />
-      <button
-        onClick={handleImportCV}
-        className="fixed bottom-8 right-8 text-teal-50"
-      >
-        CV
-      </button>
+      {isDesktop && (
+        <button
+          onClick={handleImportCV}
+          className="fixed bottom-8 right-8 text-teal-50"
+        >
+          CV
+        </button>
+      )}
     </div>
   )
 }
