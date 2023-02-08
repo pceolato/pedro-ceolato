@@ -10,7 +10,7 @@ export function Projects() {
         description="Web application to fetch information about all NBA players in this project."
         hrefRepository="https://github.com/pceolato/nba-players"
         hrefDeploy="https://nba-players.vercel.app"
-        technologies={['next', 'tailwindcss']}
+        technologies={['nextjs', 'tailwindcss']}
         image={
           <img
             src={nbaImage}
@@ -21,7 +21,7 @@ export function Projects() {
       />
       <Project
         title="Pedro Ceolato"
-        description="—I'm a software engineer passionate about transforming people`s lives through technology."
+        description="Project developed to centralize some projects and collaborations and improve my skills."
         hrefRepository="https://github.com/pceolato/pedro-ceolato"
         hrefDeploy="/"
         technologies={['reactjs', 'tailwindcss']}
