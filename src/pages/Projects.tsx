@@ -7,7 +7,7 @@ export function Projects() {
     <div className="w-full max-w-[950px] mx-auto px-8 flex flex-col items-center">
       <Project
         title="NBA Players"
-        description="Web application to fetch information about all NBA players in this project."
+        description="Web application to fetch information about all NBA players."
         hrefRepository="https://github.com/pceolato/nba-players"
         hrefDeploy="https://nba-players.vercel.app"
         technologies={['nextjs', 'tailwindcss']}
