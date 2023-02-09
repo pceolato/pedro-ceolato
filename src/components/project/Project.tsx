@@ -42,7 +42,7 @@ export function Project({
           View in Github
         </a>
       </div>
-      <div className="rounded-md w-[321px] h-[200px] md:w-[475px] md:h-[296px] border border-gray-400 hover:border-teal-500 duration-500 hover:opacity-30 cursor-pointer">
+      <div className="rounded-md w-full h-[200px] md:w-[475px] md:h-[296px] max-w-[433px] border border-gray-400 hover:border-teal-500 duration-500 hover:opacity-30 cursor-pointer">
         {hrefDeploy !== '/' ? (
           <a href={hrefDeploy} target="_blank" rel="noreferrer">
             {image}
