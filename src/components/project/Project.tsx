@@ -21,7 +21,7 @@ export function Project({
 }: ProjectProps) {
   return (
     <div className="flex flex-col items-center md:flex-row md:items-start gap-3 md:gap-6 mb-24 w-full">
-      <div className="flex flex-col gap-2 max-w-[433px]">
+      <div className="flex flex-col gap-2 max-w-[430px] md:max-w-[340px] lg:max-w-[433px]">
         <h1 className="text-teal-50 text-xl md:text-2xl lg:text-3xl font-bold transition-all duration-300">
           {title}
         </h1>
