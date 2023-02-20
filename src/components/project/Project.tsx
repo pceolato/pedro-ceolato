@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ReactNode } from 'react'
 import { Tech } from './Tech'
 
-interface ProjectProps {
+export interface ProjectProps {
   title: string
   description: string
-  image: ReactNode
+  image: {
+    src: string
+    nameProject: string
+  }
   hrefRepository: string
   hrefDeploy: string
   technologies?: string[]
@@ -21,7 +23,7 @@ export function Project({
 }: ProjectProps) {
   return (
     <div className="flex flex-col items-center md:flex-row md:items-start gap-3 md:gap-6 mb-24 w-full">
-      <div className="flex flex-col gap-2 max-w-[430px] md:max-w-[340px] lg:max-w-[433px]">
+      <div className="flex flex-col gap-2 max-w-[433px]">
         <h1 className="text-teal-50 text-xl md:text-2xl lg:text-3xl font-bold transition-all duration-300">
           {title}
         </h1>
@@ -45,10 +47,20 @@ export function Project({
       <div className="rounded-md w-full h-[200px] md:w-[475px] md:h-[296px] max-w-[433px] border border-gray-400 hover:border-teal-500 duration-500 hover:opacity-30 cursor-pointer">
         {hrefDeploy !== '/' ? (
           <a href={hrefDeploy} target="_blank" rel="noreferrer">
-            {image}
+            <img
+              src={image.src}
+              alt={`Imagem do projeto ${image.nameProject}`}
+              className="w-full h-full object-cover rounded"
+            />
           </a>
         ) : (
-          <a href={hrefDeploy}>{image}</a>
+          <a href={hrefDeploy}>
+            <img
+              src={image.src}
+              alt={`Imagem do projeto ${image.nameProject}`}
+              className="w-full h-full object-cover rounded"
+            />
+          </a>
         )}
       </div>
     </div>
