@@ -22,7 +22,7 @@ export function Projects() {
         'Project developed to centralize some projects and collaborations and improve my skills.',
       hrefRepository: 'https://github.com/pceolato/pedro-ceolato',
       hrefDeploy: '/',
-      technologies: ['reactjs', 'tailwindcss'],
+      technologies: ['reactjs', 'tailwindcss', 'radix-ui'],
       image: {
         src: portfolioImage,
         nameProject: 'pedro-ceolato',
