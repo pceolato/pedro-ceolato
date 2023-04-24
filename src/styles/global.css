@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.dark {
+    --color-bg-body: #0D1117;
+    --color-bg-card: #010409;
+    --color-text-title: #F0FDFA;
+}
+
+.light {
+    --color-bg-body: #F0FDFA;
+    --color-bg-card: #F0FDFA;
+    --color-text-title: #171717;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
