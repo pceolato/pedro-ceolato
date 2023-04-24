@@ -3,6 +3,13 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundColor: {
+        body: 'var(--color-bg-body)',
+        card: 'var(--color-bg-card)',
+      },
+      textColor: {
+        title: 'var(--color-text-title)',
+      },
       colors: {
         background: '#0D1117',
         bgOpacity: '#000000BF',
