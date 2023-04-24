@@ -11,7 +11,7 @@ export function ButtonImportCV() {
     <button
       type="button"
       onClick={handleImportCV}
-      className="text-teal-50 flex flex-col items-center gap-1 text-xs"
+      className="text-title flex flex-col items-center gap-1 text-xs"
     >
       <Download size={20} />
       CV

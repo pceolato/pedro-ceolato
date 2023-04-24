@@ -25,12 +25,12 @@ export function Home() {
               Hi, I'm Pedro Ceolato
             </h1>
           </div>
-          <p className="text-teal-50 py-3 md:py-7 text-sm md:text-base lg:text-xl transition-all duration-300">
+          <p className="text-title py-3 md:py-7 text-sm md:text-base lg:text-xl transition-all duration-300">
             I'm a software developer, this is my portfolio and here you will
             follow my projects and collaborations. I am passionate about
             technology and the power of it.
           </p>
-          <span className="block text-teal-50 text-sm md:text-base lg:text-xl">
+          <span className="block text-title text-sm md:text-base lg:text-xl">
             To get in touch, email
           </span>
           <a
@@ -46,7 +46,7 @@ export function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="p-4 font-semibold text-sm bg-gray-900 text-teal-500 rounded-md md:hover:scale-110 ease-in-out duration-500">
+            <button className="p-4 font-semibold text-sm bg-card text-teal-500 rounded-md md:hover:scale-110 ease-in-out duration-500">
               <GitHub size={24} />
             </button>
           </a>
@@ -55,7 +55,7 @@ export function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="p-4 font-semibold text-sm bg-gray-900 text-teal-500 rounded-md md:hover:scale-110 ease-in-out duration-500">
+            <button className="p-4 font-semibold text-sm bg-card text-teal-500 rounded-md md:hover:scale-110 ease-in-out duration-500">
               <Linkedin size={24} />
             </button>
           </a>

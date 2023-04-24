@@ -24,7 +24,7 @@ export function Project({
   return (
     <div className="flex flex-col items-center md:flex-row md:items-start gap-3 md:gap-6 mb-24 w-full">
       <div className="flex flex-col gap-2 max-w-[433px]">
-        <h1 className="text-teal-50 text-xl md:text-2xl lg:text-3xl font-bold transition-all duration-300">
+        <h1 className="text-title text-xl md:text-2xl lg:text-3xl font-bold transition-all duration-300">
           {title}
         </h1>
         <p className="text-gray-400 text-sm md:text-base transition-all duration-300">
