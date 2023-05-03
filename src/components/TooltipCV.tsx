@@ -12,7 +12,7 @@ export function TooltipCV() {
       <Tooltip.Root delayDuration={200}>
         <Tooltip.Trigger
           onClick={handleImportCV}
-          className="fixed bottom-12 right-10 text-teal-400 hover:text-teal-50 animate-bounce hover:animate-none transition-all duration-500"
+          className="fixed bottom-12 right-10 text-teal-400 hover:text-title animate-bounce hover:animate-none transition-all duration-500"
         >
           <Download />
         </Tooltip.Trigger>
