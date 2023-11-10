@@ -23,7 +23,7 @@ export function NavMobile() {
         </Dialog.Trigger>
         <Dialog.Portal>
           <Dialog.Overlay className="fixed w-screen top-0 h-screen bg-bgOpacity/80" />
-          <Dialog.Content className="fixed top-0 w-full h-4/5 bg-body rounded-b-[100px]">
+          <Dialog.Content className="fixed top-0 w-full h-4/5 bg-body rounded-b-[100px] z-10">
             <Dialog.Close
               asChild
               className="absolute bg-transparent border-none top-8 right-8 text-title"
