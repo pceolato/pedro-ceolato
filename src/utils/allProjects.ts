@@ -1,14 +1,20 @@
-import portfolioImage from '../assets/portfolio.svg'
-import mentorGoImage from '../assets/mentorGo.svg'
-import nbaImage from '../assets/nba-players.svg'
+import portfolioImage1 from '../assets/portfolio1.svg'
+import portfolioImage2 from '../assets/portfolio2.svg'
+
+import mentorGoImage1 from '../assets/mentorGo1.svg'
+import mentorGoImage2 from '../assets/mentorGo2.svg'
+
+import nbaImage1 from '../assets/nba-players1.svg'
+import nbaImage2 from '../assets/nba-players2.svg'
+import nbaImage3 from '../assets/nba-players3.svg'
 
 interface ProjectType {
   title: string
   description: string
-  image: {
+  images: {
     src: string
     nameProject: string
-  }
+  }[]
   hrefRepository: string
   hrefDeploy: string
   technologies?: string[]
@@ -35,10 +41,16 @@ export const allProjects: groupProjectType[] = [
           "With MentorGo, mentors and teachers can efficiently manage each student's individual development. The platform offers personalized resources for each learning stage, allowing mentors to create challenges, write articles, register courses and create rooms. If you already provide some kind of mentoring or private lessons, increase the efficiency of your teachings and take your students to the next level with MentorGo.",
         hrefDeploy: 'https://mentor-go.vercel.app/',
         hrefRepository: 'https://github.com/CodeTheFato/MentorGo',
-        image: {
-          src: mentorGoImage,
-          nameProject: 'mentor-go',
-        },
+        images: [
+          {
+            src: mentorGoImage1,
+            nameProject: 'mentor-go-image1',
+          },
+          {
+            src: mentorGoImage2,
+            nameProject: 'mentor-go-image2',
+          },
+        ],
         technologies: ['nextjs', 'chakra-ui', 'prisma', 'mongoDB'],
         typeProject: 'cothefato',
       },
@@ -57,10 +69,20 @@ export const allProjects: groupProjectType[] = [
         hrefRepository: 'https://github.com/pceolato/nba-players',
         hrefDeploy: 'https://nba-players.vercel.app',
         technologies: ['nextjs', 'tailwindcss'],
-        image: {
-          src: nbaImage,
-          nameProject: 'NBA-Players',
-        },
+        images: [
+          {
+            src: nbaImage1,
+            nameProject: 'NBA-Players1',
+          },
+          {
+            src: nbaImage2,
+            nameProject: 'NBA-Players2',
+          },
+          {
+            src: nbaImage3,
+            nameProject: 'NBA-Players3',
+          },
+        ],
         typeProject: 'personal',
       },
       {
@@ -70,10 +92,16 @@ export const allProjects: groupProjectType[] = [
         hrefRepository: 'https://github.com/pceolato/pedro-ceolato',
         hrefDeploy: '/',
         technologies: ['reactjs', 'tailwindcss', 'radix-ui'],
-        image: {
-          src: portfolioImage,
-          nameProject: 'pedro-ceolato',
-        },
+        images: [
+          {
+            src: portfolioImage1,
+            nameProject: 'pedro-ceolato-imagem1',
+          },
+          {
+            src: portfolioImage2,
+            nameProject: 'pedro-ceolato-imagem2',
+          },
+        ],
         typeProject: 'personal',
       },
     ],
