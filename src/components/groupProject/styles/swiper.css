@@ -1,7 +1,0 @@
-.swiper-button-next, .swiper-button-prev {
-  color: #14b8a6; /* Define a cor desejada */
-}
-
-.swiper-button-prev:after, .swiper-button-next:after {
-    font-size: 24px;
-}
