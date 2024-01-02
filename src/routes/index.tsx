@@ -3,7 +3,6 @@ import { MainLayout } from '../layouts/MainLayout'
 import { Home } from '../pages/Home'
 import { NotFound } from '../pages/NotFound'
 import { Projects } from '../pages/Projects'
-import { ProjectsByType } from '../pages/ProjectsByType'
 
 export function Router() {
   return (
@@ -12,7 +11,6 @@ export function Router() {
         <Route path="/" element={<Home />} />
         <Route path="/projects">
           <Route index element={<Projects />} />
-          <Route path="/projects/:typeProject" element={<ProjectsByType />} />
         </Route>
       </Route>
       <Route path="*" element={<NotFound />} />
