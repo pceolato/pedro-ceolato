@@ -1,13 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Tech } from './Tech'
 
+// import Swiper core and required modules
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectFlip,
+  Mousewheel,
+} from 'swiper/modules'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/effect-flip'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import '../../styles/swiper.css'
+
 export interface ProjectProps {
   title: string
   description: string
-  image: {
+  images: {
     src: string
     nameProject: string
-  }
+  }[]
   hrefRepository: string
   hrefDeploy: string
   technologies?: string[]
@@ -17,7 +37,7 @@ export interface ProjectProps {
 export function Project({
   title,
   description,
-  image,
+  images,
   hrefRepository,
   hrefDeploy,
   technologies,
@@ -48,19 +68,72 @@ export function Project({
       <div className="rounded-md w-full h-[200px] md:w-[475px] md:h-[296px] max-w-[433px] border border-gray-400 hover:border-teal-500 duration-500 hover:opacity-30 cursor-pointer">
         {hrefDeploy !== '/' ? (
           <a href={hrefDeploy} target="_blank" rel="noreferrer">
-            <img
+            <Swiper
+              effect="flip"
+              modules={[
+                Navigation,
+                Pagination,
+                Scrollbar,
+                A11y,
+                EffectFlip,
+                Mousewheel,
+              ]}
+              spaceBetween={50}
+              slidesPerView={1}
+              mousewheel={true}
+              navigation
+              pagination={{ clickable: true, dynamicBullets: true }}
+            >
+              {images.map((image, i) => (
+                <SwiperSlide key={`${image.nameProject}-${i}`}>
+                  <img
+                    src={image.src}
+                    alt={`Imagem do projeto ${image.nameProject}`}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* <img
               src={image.src}
               alt={`Imagem do projeto ${image.nameProject}`}
               className="w-full h-full object-cover rounded"
-            />
+            /> */}
           </a>
         ) : (
           <a href={hrefDeploy}>
-            <img
+            <Swiper
+              effect="flip"
+              modules={[
+                Navigation,
+                Pagination,
+                Scrollbar,
+                A11y,
+                EffectFlip,
+                Mousewheel,
+              ]}
+              spaceBetween={50}
+              loop={true}
+              slidesPerView={1}
+              mousewheel={true}
+              navigation
+              pagination={{ clickable: true, dynamicBullets: true }}
+            >
+              {images.map((image, i) => (
+                <SwiperSlide key={`${image.nameProject}-${i}`}>
+                  <img
+                    src={image.src}
+                    alt={`Imagem do projeto ${image.nameProject}`}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* <img
               src={image.src}
               alt={`Imagem do projeto ${image.nameProject}`}
               className="w-full h-full object-cover rounded"
-            />
+            /> */}
           </a>
         )}
       </div>
